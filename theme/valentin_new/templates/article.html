@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}{{ title }} - {{ site_title }}{% endblock %}
+{% block content %}        
+<section id="article_content" class="body"> 
+        <div class="post-info">   
+                <h3 class="entry-title">{{ title }}</h3>
+                <abbr class="published" title="{{ date }}">
+                        {{ date }} | Tags: {{tags}}
+                </abbr>
+        </div><!-- /.post-info -->
+        <div class="entry-content">
+            {{content}}
+        </div><!-- /.entry-content -->
+
+
+        <script type="text/javascript" src="https://apis.google.com/js/plusone.js" gapi_processed="true"></script>
+        <div id="plusonecomments"></div>
+        <script type='text/javascript'>
+            var id = 'plusonecomments'; 
+            var divWidth = document.getElementById(id).offsetWidth; 
+            var width = !!divWidth ? Math.min(divWidth, 1351) : 600; 
+            var url = document.URL; 
+            var moderationUrl = ""; 
+            var moderationMode = "FILTERED_POSTMOD"; 
+            gapi.comments.render(id, { 'href': url, 'first_party_property': 'BLOGGER', 'legacy_comment_moderation_url': moderationUrl, 'view_type': moderationMode, 'width': width });
+        </script>
+</section>
+{% endblock %}

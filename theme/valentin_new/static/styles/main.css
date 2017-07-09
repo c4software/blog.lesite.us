@@ -1,0 +1,149 @@
+
+@media screen and (max-width: 1000px){
+    #posts{
+        margin-top: 0px !important;
+        width: 90% !important;
+        padding-left: .75em !important;
+        padding-right: .75em !important;
+    }
+
+    #article_content, .postContent{
+        font-size: 1em !important;
+    }
+
+    #article_content h3, .postContent h3{
+        font-size: 1.7em !important;
+        line-height: 1.23529em !important;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    #banner > #nav li, #banner > #nav ul {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+}
+
+body{
+    background-image:url('../images/bright_squares.png');
+    margin:  0;
+    padding: 0;
+    color: #595959;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#banner{
+    color: #fff;
+    background-image:url("../images/cover.jpg");
+    background-position: 0 37%;
+    background-size: cover;
+    min-height: 350px;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.75);
+}
+
+#banner h1{
+    line-height: 1.75em;
+    text-transform: none;
+}
+
+#banner a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+#banner a:hover{
+    text-decoration: none;
+}
+
+#avatar{
+    padding-top:70px;
+    min-height: 120px;
+}
+
+#banner > #avatar > a > img{
+    width: 120px;
+    height: 120px;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 5px #000;
+}
+
+#banner > #nav li, #banner > #nav ul{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline;
+    list-style-type: none;
+}
+
+.center{
+    text-align: center;
+}
+
+.rounded{
+    border-radius: 200px;
+}
+
+#posts{
+    width: 1000px;
+    margin: auto;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    overflow: hidden;
+}
+
+#article_content, .postContent{
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+#article_content h3, .postContent h3{
+    font-size: 1.8em;
+    line-height: 1.55556em;
+    margin-top: 0.77778em;
+    margin-bottom: 0px;
+}
+
+#article_content a{
+    text-decoration: underline;
+}
+
+.continuLink{
+    font-size: 0.8em;
+}
+
+p {
+    word-wrap: normal !important;
+    word-break: normal !important;
+    text-align: justify !important;
+}
+
+a{
+    color: #595959;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#footer{
+    background-color: rgb(85, 85, 85);
+    color: #fff;
+    min-height: 40px;
+    line-height: 40px;
+}
+
+#footer a{
+    color: #fff;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.paginator{
+    text-align: center !important;
+}

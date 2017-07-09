@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    {% block head %}
+    <title>{% block title %}{{ site_title }}{% endblock %} | {{ author }} </title>
+    <link rel="stylesheet" href="/theme/styles/main.css" type="text/css" />
+    <link rel="stylesheet" href="/theme/styles/pygments.css" type="text/css" />
+    <meta charset="utf-8" />
+    <!--[if IE]>
+        <script src="/theme/scripts/html5.js"></script><![endif]-->
+    <!--[if lte IE 7]>
+        <script src="/theme/scripts/IE9.js" type="text/javascript"></script><![endif]-->
+
+    <link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+    
+    <meta name="title" content="{{site_title}}">
+    <meta name="author" content="{{author}}">
+    
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="alternate" type="application/rss+xml" title="{{ author }} Flux Rss" href="/feeds/all.atom.xml"/>
+    {% endblock head %}
+</head>
+
+<body id="index">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NP6W55"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NP6W55');</script>
+    <!-- End Google Tag Manager -->
+    <header id="banner" class="body">
+        <div class="pressTitle">
+            <h1>{{ site_title }}</h1>
+            <div class="clear"></div>
+        </div>
+        <nav>
+            <ul>
+                {% for title, link in links %}
+                    <li><a href="{{ link }}">{{ title }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
+    <section id="content" class="content">
+        <!-- CONTENU -->
+        <div class="left">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div class="right">
+            <div>
+                <h3>Hi!</h3>
+                <div itemscope itemtype="http://data-vocabulary.org/Person">
+                    <img src="https://pbs.twimg.com/profile_images/3762199551/9fdd72f73c3eb3c974b004e83f7b4623_bigger.jpeg" id="profile_pict" />
+                    <p class="justify">Bonjour, je suis <b itemprop="name">{{ author }}</b>, <span itemprop="title">Créateur de framework et de librairies en tous genres</span>. Réutilisation et simplification sont mes moteurs! Je suis d'<span itemprop="location">Angers</span> et je travaille actuellement pour <span itemprop="affiliation">Afone</span></p>
+                </div>      
+                <!--<ul>
+                    {% for category, articles in categories %}
+                        <li>{{ category }}</li>
+                    {% endfor %}
+                </ul> -->
+            </div>
+        </div>
+        <div class="clear"></div>
+    </section>
+    <footer>
+        <hr />
+        G&eacute;n&eacute;r&eacute; par <a href="https://github.com/c4software/YASB">Yasb</a> le {{lastbuild.strftime("%Y-%m-%d %H:%M:%S")}} | <a rel="author" href="https://plus.google.com/104883394321573041618/about" title="+{{ author }}">{{ author }}</a>
+    </footer>
+</body>
+
+</html>
+

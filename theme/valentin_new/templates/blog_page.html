@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+	{% for fields,article in articles %}
+	<article>
+        <div class="postContent">
+            <h3><a href="/{{ fields.page }}" rel="bookmark" title="Permalink to {{fields.title}}">{{ fields.title }}</a></h3>
+            <abbr class="published" title="{{ date }}">
+                  {{author}} | {{fields.date.date().day}}-{{fields.date.date().month}}-{{fields.date.date().year}}
+            </abbr>
+            <div class="post">
+            	{{ fields.summary }}
+            	<a href="/{{ fields.page }}" class="continuLink">Lire la suite...</a>
+            </div>
+        </div>
+	</article>
+	{% endfor %}
+
+	<p class="paginator">
+		{% if  paginator.has_previous %}
+        <a href="/{{ paginator.previous_page }}.html">&laquo;</a>
+        {% endif %}
+	    Page {{ current_page }} / {{ nb_page }}
+		{% if  paginator.has_next %}
+	    <a href="/{{ paginator.next_page }}.html">&raquo;</a>
+	    {% endif %}
+	</p>
+{% endblock %}
