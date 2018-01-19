@@ -31,6 +31,6 @@ clean:
 	mkdir $(OUTPUTDIR)
 
 rsync:
-	rsync -avzh --no-perms --no-owner --no-group --exclude '.diff_build_db' --exclude '.lastbuild' --delete -e "ssh -p $(SSH_PORT)" $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
+	rsync -acvzh --no-perms --no-owner --no-group --exclude '.diff_build_db' --exclude '.lastbuild' --delete -e "ssh -p $(SSH_PORT)" $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
 
 .PHONY: help clean minimal minimal-verbose autobuild full rsync
