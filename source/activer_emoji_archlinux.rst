@@ -7,7 +7,7 @@ Activer les emoji’s colorés sur Archlinux
 :blog:
 :template: article.html
 
-Une note rapide, si comme moi vous voulez activer les emoji’s colorés sur Archlinux sans vous prendre la tête il suffit d’installer la bonne font et créer le bon fichier de configuration :
+Une note rapide, si comme moi vous voulez activer les emoji’s colorés (comme sur un mobile) sur Archlinux sans vous prendre la tête il suffit d’installer la bonne font et créer le bon fichier de configuration :
 
 .. code-block:: shell
 
