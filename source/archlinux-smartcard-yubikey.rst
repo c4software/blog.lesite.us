@@ -25,7 +25,7 @@ Puis démarrer le service :
 
 Et pour la configuration, c’est comme sur les autres systèmes :
 
-.. code-block:: configuration
+.. code-block::
 
     enable-ssh-support
     default-cache-ttl 1800
