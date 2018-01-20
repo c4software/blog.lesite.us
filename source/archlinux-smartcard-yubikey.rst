@@ -1,5 +1,5 @@
-Utiser une Yubikey comme smartcard et Agent-SSH avec Archilnux
-##############################################################
+Utiliser une Yubikey comme Smartcard et Agent-SSH avec Archlinux
+#################################################################
 
 :tags: Archlinux, yubikey, systeme, os
 :category: Archlinux
