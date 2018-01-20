@@ -9,7 +9,7 @@ Utiliser une Yubikey comme Smartcard et Agent-SSH avec Archlinux
 
 J'ai récemment réinstallé un Archlinux (sur un Dell XPS 2017, le 9360) j'utilise depuis quelques mois une Yubikey comme Smartcard (et comme Agent-SSH). C'est bien pratique et cela évite d'avoir les clefs PGP et SSH physiquement sur la machine.
 
-J'utilisai ma clé sur un Mac et sur Android, mais je ne l'avais pas branché sur une machine Archlinux… Donc ce qui nous intéresse la configuration. Pour que ça fonctionne il faut installer les paquets suivants :
+J'utilisais ma clé sur un Mac et sur Android, mais je ne l'avais pas branché sur une machine Archlinux… Donc ce qui nous intéresse la configuration. Pour que ça fonctionne il faut installer les paquets suivants :
 
 .. code-block:: shell
 
