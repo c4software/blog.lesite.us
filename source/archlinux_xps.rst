@@ -29,7 +29,7 @@ Je vous conseille une fois booté de lancer le service SSH pour faire l'installa
     $ systemctl start sshd.service
 
     # Connexion au Wifi
-    wifi-menu
+    $ wifi-menu
 
     # Avoir votre IP
     $ ip addr
