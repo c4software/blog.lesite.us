@@ -39,3 +39,97 @@ Pour la suite vous pouvez continuer depuis une autre machine
 .. code-block:: shell
 
     $ ssh root@ip.de.votre.machine
+
+
+Pour éviter de perdre la partition de recovery fourni par DELL j’ai décidé de ne pas toucher au partitionnement « de base », je part du principe que ça sera le cas vous aussi.
+
+
+.. code-block:: shell
+
+    # Clavier
+    loadkeys fr-bepo
+
+    # Reglage de l’heure
+    timedatectl set-ntp true
+
+    # Éffacement des partitions
+    # Boot
+    $ mkfs.fat -F32 /dev/nvme0n1p1
+
+    # Système
+    $ mkfs.ext4 /dev/nvme0n1p3
+
+    # Montage des partitions
+    $ mount /dev/nvme0n1p3 /mnt 
+    $ mount /dev/nvme0n1p1 /mnt/boot
+
+    # Installation du système de base et d’autres paquets nécéssaire en CLI
+    $ pacstrap /mnt base base-devel dialog zsh git sudo vim dialog wpa_supplicant iw
+
+    # Création du fstab
+    $ genfstab -L /mnt >> /mnt/etc/fstab
+
+    # Changer la partition ext4 pour passer de relatime to noatime (Ça réduit l’usure du SSD)
+    $ vim /mint/etc/fstab
+
+    # Activation du chroot
+    $ arch-chroot /mnt
+
+    # Reglage du temps
+    $ ln -s /usr/share/zoneinfo/Europe/Paris /etc/localtime
+    $ hwclock --systohc
+
+    # Réglage des locales
+    $ vi /etc/locale.gen	# Décommenter par exemple "en_US.UTF-8", "fr_FR.UTF-8"
+    $ locale-gen
+
+    # Locale par défaut
+    $ echo 'LANG=fr_FR.UTF-8' > /etc/locale.conf
+
+    # Disposition clavier par defaut
+    $ echo 'KEYMAP=fr-bepo' > /etc/vconsole.conf
+
+    # Nom de la machine
+    echo 'vbrosseau-laptop' > /etc/hostname
+
+    # Définition des hosts de base
+    $ echo '127.0.0.1   localhost.localdomain	localhost' > /etc/hosts
+    $ echo '::1 	localhost.localdomain	localhost' >> /etc/hosts
+    $ echo '127.0.1.1   vbrosseau-laptop.localdomain	vbrosseau-laptop' >> /etc/hosts
+
+    # Définition du mot de passe root de votre machine
+    $ passwd
+
+    # Création de votre utilisateur
+    $ useradd -m -g users -G wheel -s /bin/zsh vbrosseau
+    $ passwd vbrosseau
+    $ echo 'vbrosseau ALL=(ALL) ALL' > /etc/sudoers.d/vbrosseau
+
+    # Activation du modules ext4 (requis pour le boot)
+    $ vim /etc/mkinitcpio.conf
+    # Ajouter "ext4" dans MODULES
+
+    # Génération de l’image initrd
+    $ mkinitcpio -p linux
+
+    # Installation des de la gestion des updates d’Intel
+    $ pacman -S intel-ucode 
+
+    # Boot de la machine (c’est la partie la plus sensible)
+    $ bootctl --path=/boot install
+
+    # Création des entrées dans le bootloader (bootctl)
+    $ vim /boot/loader/entries/arch.conf
+
+    title   Arch Linux
+    linux   /vmlinuz-linux
+    initrd	/intel-ucode.img
+    initrd  /initramfs-linux.img
+    options root=/dev/nvme0n1p3 rw
+
+    # Mettre Archlinux comme boot par defaut
+    $ vim /boot/loader/loader.conf
+
+    default		arch
+
+Voilà l’installation de base est faite. Avant de rédémarrer installons la suite (La partie graphique et dans mon cas Gnome-Shell)
