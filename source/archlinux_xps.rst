@@ -13,3 +13,29 @@ La machine est livrée avec Ubuntu 16.04 LTS, ça fonctionne… mais je ne suis 
 
 - [Téléchargement de l’ISO](https://www.archlinux.org/download/).
 - Dans l’UEFI de la machine désactiver le secureboot (F12 au démarrage).
+- Choisir la clef USB sur laquelle l’ISO à été « copié ».
+
+
+Je vous conseil une fois booté de lancer le service SSH pour faire l’installation depuis une autre machine (ça permet de copier les commandes) :
+
+.. code-block:: shell
+
+    # Clavier
+    loadkeys fr-bepo
+
+    # Pour autoriser la connexion le compte Root doit avoir un mot de passe.
+    $ passwd
+    $ systemctl start sshd.service
+
+    # Connexion au Wifi
+    wifi-menu
+
+    # Avoir votre IP
+    $ ip addr
+
+
+Pour la suite vous pouvez continuer depuis une autre machine
+
+.. code-block:: shell
+
+    $ ssh root@ip.de.votre.machine
