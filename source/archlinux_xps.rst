@@ -15,6 +15,7 @@ La machine est livrée avec Ubuntu 16.04 LTS, ça fonctionne… mais je ne suis 
 - Dans l’UEFI de la machine désactiver le secureboot (F12 au démarrage).
 - Choisir la clef USB sur laquelle l’ISO à été « copié ».
 
+⚠️ Archlinux n’est pas un OS pour débutant, si vous avez un doute… Passer votre tour.
 
 Je vous conseil une fois booté de lancer le service SSH pour faire l’installation depuis une autre machine (ça permet de copier les commandes) :
 
