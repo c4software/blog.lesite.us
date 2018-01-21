@@ -43,6 +43,8 @@ Pour la suite vous pouvez continuer depuis une autre machine
 
 Pour éviter de perdre la partition de recovery fourni par DELL j’ai décidé de ne pas toucher au partitionnement « de base », je part du principe que ça sera le cas vous aussi.
 
+La base
+-------
 
 .. code-block:: shell
 
@@ -133,3 +135,28 @@ Pour éviter de perdre la partition de recovery fourni par DELL j’ai décidé 
     default		arch
 
 Voilà l’installation de base est faite. Avant de rédémarrer installons la suite (La partie graphique et dans mon cas Gnome-Shell)
+
+La partie Graphique, Audio et Gnome-Shell
+----------------------------------------
+
+
+.. code-block:: shell
+
+    # L’audio
+    $ pacman -S gst-plugins-{base,good,bad,ugly} gst-libav
+
+    # Xorg
+    $ pacman -S xorg-{server,xinit} xf86-input-libinput xdg-user-dirs
+
+    # Le pilote graphique
+    $ pacman -S xf86-video-intel
+
+    # Les fonts
+    $ pacman -S ttf-{bitstream-vera,liberation,freefont,dejavu}
+
+    # Installation de Gnome-Shell
+    $ pacman -S gnome gnome-extra system-config-printer unoconv pavucontrol pulseaudio pulseaudio-alsa
+    $ systemctl enable gdm
+
+    # Extra 
+    $ pacman -S libreoffice-still-fr firefox-i18n-fr chromium
