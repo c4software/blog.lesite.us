@@ -138,8 +138,7 @@ La base
 Voilà l’installation de base est faite. Avant de rédémarrer installons la suite (La partie graphique et dans mon cas Gnome-Shell)
 
 La partie Graphique, Audio et Gnome-Shell
-----------------------------------------
-
+-----------------------------------------
 
 .. code-block:: shell
 
