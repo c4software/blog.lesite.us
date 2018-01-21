@@ -178,3 +178,16 @@ Ajouter à la fin du /etc/pacman.conf le Repository « Archlinux FR »
     # Installation de Yaourt
     $ pacman -Syy
     $ pacman -S yaourt
+
+Voilà, maintenant que tout est installé
+
+.. code-block:: shell
+
+    # On quitte 
+    $ exit
+
+    # On reboot
+    $ reboot
+
+
+Votre ordinateur devrais reboot sous Archlinux.
