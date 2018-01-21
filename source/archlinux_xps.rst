@@ -160,3 +160,21 @@ La partie Graphique, Audio et Gnome-Shell
 
     # Extra 
     $ pacman -S libreoffice-still-fr firefox-i18n-fr chromium
+
+AUR ou Arch User Repository
+---------------------------
+
+Ajouter à la fin du /etc/pacman.conf le Repository « Archlinux FR »
+
+.. code-block:: shell
+
+    # Ajouter à la fin
+    $ vim /etc/pacman.conf
+
+    [archlinuxfr]
+    SigLevel = Never
+    Server = http://repo.archlinux.fr/$arch
+
+    # Installation de Yaourt
+    $ pacman -Syy
+    $ pacman -S yaourt
