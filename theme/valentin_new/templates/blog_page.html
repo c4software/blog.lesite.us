@@ -5,7 +5,7 @@
         <div class="postContent">
             <h3><a href="/{{ fields.page }}" rel="bookmark" title="Permalink to {{fields.title}}">{{ fields.title }}</a></h3>
             <abbr class="published" title="{{ date }}">
-                  {{author}} | {{fields.date.date().day}}-{{fields.date.date().month}}-{{fields.date.date().year}}
+                  {{author}} | {{'%02d' % fields.date.date().day}}-{{ '%02d' % fields.date.date().month }}-{{fields.date.date().year}}
             </abbr>
             <div class="post">
             	{{ fields.summary }}
