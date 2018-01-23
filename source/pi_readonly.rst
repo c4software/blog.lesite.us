@@ -11,7 +11,7 @@ Avec mes Pi j'ai un soucis récurrent c'est l'usure des cartes SD… J'ai tenté
 
 J'ai donc décidé de changer carrément de méthode, à partir de maintenant pour les projets ou je n'ai pas besoin d'écrire sur la carte SD, et bien je monte carrément le système en lecture seule. Pour ça il suffit de changer un peu le « /etc/fstab » :
 
-.. code-block:: configuration
+.. code-block:: linux-config
 
     proc            /proc           proc    defaults          0       0
     /dev/mmcblk0p1  /boot           vfat    defaults          0       2
