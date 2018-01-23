@@ -1,5 +1,5 @@
-Sauver une carte SD! Utiliser votre Pi en lecture seule
-#######################################################
+Sauver une carte SD! Utiliser votre RaspberryPi en lecture seul (ReadOnly)
+##########################################################################
 
 :tags: RaspberryPi, carde sd, readonly, tweak
 :category: RaspberryPi
