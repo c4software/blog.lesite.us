@@ -159,7 +159,7 @@ La partie Graphique, Audio et Gnome-Shell
     $ systemctl enable gdm
 
     # Extra 
-    $ pacman -S libreoffice-still-fr firefox-i18n-fr chromium
+    $ pacman -S libreoffice-still-fr firefox-developer-edition-i18n-fr chromium
 
 AUR ou Arch User Repository
 ---------------------------
