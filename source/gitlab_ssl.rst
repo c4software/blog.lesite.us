@@ -84,8 +84,8 @@ Maintenant que le certificat a été généré il faut activer réellement le SS
 
 Changer la configuration de vos URL dans le /etc/gitlab/gitlab.rb pour ajouter un **s** après http :
 
-- http**s**://mattermost.votre_domaine.fr/ 
-- http**s**://gitlab.votre_domaine.fr/
+- https://mattermost.votre_domaine.fr/ 
+- https://gitlab.votre_domaine.fr/
 
 
 Finalisont en appliquant la configuration :
