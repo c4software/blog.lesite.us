@@ -96,3 +96,14 @@ Finalisont en appliquant la configuration :
 
 
 Et voilà votre GitLab est maintenant configuré en SSL.
+
+Renouvellement
+--------------
+
+Les certificats LetsEncrypt ont une durée de validité de 90 jours, mais ils peuvent être renouvelés à l'infinies, avec acme.sh pas de soucis un cron a automatiquement été mis en place lors de l'installation du client acme. Normalement tous les 60 jours vos certificats seront automatiquement renouvelés. Dans mon cas :
+
+.. code-block:: shell
+
+    $ crontab -l
+    52 0 * * * "/root/.acme.sh"/acme.sh --cron --home "/root/.acme.sh" > /dev/null
+
