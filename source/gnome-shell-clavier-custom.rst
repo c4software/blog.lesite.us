@@ -17,3 +17,18 @@ Sur ma distribution j'utilise Gnome-Shell, j'ai donc fait une « petite » exten
 .. image:: https://github.com/c4software/xkbswitcher/raw/master/screen.png
 
 Pour l'instant je ne l'ai pas publiée, elle est uniquement disponible sur mon compte GitHub. Je m'en sers maintenant depuis quelques temps sans soucis. Si vous aussi vous la voulez c'est `à télécharger ici <https://github.com/c4software/xkbswitcher/>`_.
+
+Pour déclarer une disposition personnalisées il faut juste :
+
+.. code-block:: shell 
+
+    $ mkdir -p ~/.xkb/symbols/
+    $ cp bepoDev.xkb ~/.xkb/symbols/
+
+À partir de maintenant vous allez pouvoir l’utiliser dans votre système. Avec l’extension ou directement avec la commande :
+
+.. code-block:: shell
+
+    $ setxkbmap -I ~/.xkb bepoDev -print | xkbcomp -I$HOME/.xkb - $DISPLAY
+
+Bonne bidouille !
