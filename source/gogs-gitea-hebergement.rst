@@ -45,6 +45,22 @@ Vous devez donc avoir quelques choses comme :
 
 ..image:: https://github.com/c4software/dotfiles/blob/master/gitea/images/structure.png
 
-Maintenant que tout est sur le NAS, nous allons éditer la configuration du script :
+Maintenant que tout est sur le NAS, nous allons éditer la configuration du script. Il faut donc remplacer les 2 variables en haut du fichier par les valeurs correspondants à votre configuration. Dans mon cas :
 
-TODO
+```shell
+GITEA_ROOT="/var/services/homes/gitea/gitea/"
+GITEA_USER="gitea"
+```
+
+Voilà. Votre script est prêt à être utilisé.
+
+Démarrage et Arrêt automatique
+------------------------------
+
+Maintenant que tout est prêt, nous allons mettre en place les deux « tâches » dans le « Planificateur de tâches » du NAS :
+
+⚠️ Le script de démarrage doit être lancé en root.
+
+..image:: https://raw.githubusercontent.com/c4software/dotfiles/master/gitea/images/creation.png
+..image:: https://raw.githubusercontent.com/c4software/dotfiles/master/gitea/images/creation2.png
+..image:: https://raw.githubusercontent.com/c4software/dotfiles/master/gitea/images/creation3.png
