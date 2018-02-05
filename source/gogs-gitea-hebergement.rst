@@ -5,7 +5,6 @@ Installer Gitea (ou Gogs) sur un NAS Synology
 :category: Bidouille
 :date: 2018-02-03 20:00:00
 :blog:
-:status: draft
 :template: article.html
 
 On est tous d’accord le versionning c’est hyper important (oui même pour un projet perso). On peu utiliser GitHub ou GitLab (ou autre d’ailleur) mais si on à la chance d’avoir un « serveur » à la maison on peu faire mieux, héberger les sources à domiciles.
@@ -24,8 +23,8 @@ La première étape c’est la récupération du binaire de Gitea qui correspond
 
 Le binaires sont tous disponibles sur le `GitHub de Gitea <https://github.com/go-gitea/gitea/releases>`_, télécharger celui qui correspond à votre processeur et garder le sur votre ordinateur.
 
-Préparation du NAS
-------------------
+1. Préparation du NAS
+---------------------
 
 Sur le NAS deux options :
 
@@ -34,8 +33,8 @@ Sur le NAS deux options :
 
 La vous avez le choix, dans tous les cas je vous conseils juste de ne pas lancer Gitea avec un compte administrateur… Juste au cas ou !
 
-« Installation » et configuration
----------------------------------
+2. « Installation » et configuration
+-------------------------------------
 
 Pour installer Gitea il faut juste lancer le binaire avec le paramètre « Web », c’est donc vraiment très simple ! Le soucis par contre c’est que le programme garde la main (étrange je trouve pour ce genre de service…). Il faut donc un petit script qui se chargera de lancer Gitea et de le mettre en arrière plan.
 
@@ -43,24 +42,25 @@ J’ai donc fait un petit script qui va permettre de lancer (et d’arrêter Git
 
 Vous devez donc avoir quelques choses comme :
 
-..image:: https://github.com/c4software/dotfiles/blob/master/gitea/images/structure.png
+.. image:: https://raw.githubusercontent.com/c4software/dotfiles/master/gitea/images/structure.png
 
 Maintenant que tout est sur le NAS, nous allons éditer la configuration du script. Il faut donc remplacer les 2 variables en haut du fichier par les valeurs correspondants à votre configuration. Dans mon cas :
 
-```shell
-GITEA_ROOT="/var/services/homes/gitea/gitea/"
-GITEA_USER="gitea"
-```
+.. code-block:: shell 
+
+    GITEA_ROOT="/var/services/homes/gitea/gitea/"
+    GITEA_USER="gitea"
+
 
 Voilà. Votre script est prêt à être utilisé.
 
-Démarrage et Arrêt automatique
-------------------------------
+3. Démarrage et Arrêt automatique
+----------------------------------
 
 Maintenant que tout est prêt, nous allons mettre en place les deux « tâches » dans le « Planificateur de tâches » du NAS :
 
 ⚠️ Le script de démarrage doit être lancé en root.
 
-..image:: https://raw.githubusercontent.com/c4software/dotfiles/master/gitea/images/creation.png
-..image:: https://raw.githubusercontent.com/c4software/dotfiles/master/gitea/images/creation2.png
-..image:: https://raw.githubusercontent.com/c4software/dotfiles/master/gitea/images/creation3.png
+.. image:: https://raw.githubusercontent.com/c4software/dotfiles/master/gitea/images/creation.png
+.. image:: https://raw.githubusercontent.com/c4software/dotfiles/master/gitea/images/creation2.png
+.. image:: https://raw.githubusercontent.com/c4software/dotfiles/master/gitea/images/creation3.png
