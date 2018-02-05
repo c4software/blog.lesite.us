@@ -51,6 +51,7 @@ Maintenant que tout est sur le NAS, nous allons éditer la configuration du scri
     GITEA_ROOT="/var/services/homes/gitea/gitea/"
     GITEA_USER="gitea"
 
+️️⚠️ Vous pouvez avoir le chemin dans les propriété de l’un des deux fichiers.
 
 Voilà. Votre script est prêt à être utilisé.
 
