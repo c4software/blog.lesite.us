@@ -75,7 +75,7 @@ http://ip.de.votre.nas:3000
 
 À partir de maintenant vous êtes dans Gitea, personnellement je l’ai configuré en mode SQLite pour tester le services c’est bien. 
 
-5. Conclusion et fin
---------------------
+5. La suite…
+-------------
 
 Voilà votre service Git est fonctionnel. Cependant de base vous n’allez pouvoir cloner en SSH facilement. Dans un prochain article je vais détailler l’activation du serveur SSH intégré.
