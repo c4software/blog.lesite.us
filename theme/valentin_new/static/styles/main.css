@@ -5,6 +5,8 @@
         width: 90% !important;
         padding-left: .75em !important;
         padding-right: .75em !important;
+
+        box-shadow: transparent !important;
     }
 
     #article_content, .postContent{
@@ -26,7 +28,7 @@
 }
 
 body{
-    background-image:url('../images/bright_squares.png');
+    background-color: #EDEDED;
     margin:  0;
     padding: 0;
     color: #595959;
@@ -87,11 +89,18 @@ body{
 #posts{
     width: 1000px;
     margin: auto;
-
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 50px;
-
     overflow: hidden;
+}
+
+article {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #ffffff;
+
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
 }
 
 #article_content, .postContent{
@@ -106,12 +115,19 @@ body{
     margin-bottom: 0px;
 }
 
+#article_content h3:first-of-type, .postContent h3:first-of-type{
+    margin-top: 0;
+}
+
 #article_content a{
     text-decoration: underline;
 }
 
 .continuLink{
-    font-size: 0.8em;
+    font-size: 1em;
+}
+.continuLink:hover{
+    text-decoration: underline;
 }
 
 p {
