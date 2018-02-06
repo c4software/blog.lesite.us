@@ -31,7 +31,7 @@ Sur le NAS deux options :
 - Utiliser un compte existant.
 - Créer un nouveau compte.
 
-La vous avez le choix, dans tous les cas je vous conseils juste de ne pas lancer Gitea avec un compte administrateur… Juste au cas ou !
+La vous avez le choix, dans tous les cas je vous conseils juste de ne pas lancer Gitea avec un compte administrateur… Juste au cas ou ! Moi dans mon cas j’ai pris l’exemple d’un compte nommé Gitea
 
 2. « Installation » et configuration
 -------------------------------------
@@ -65,3 +65,4 @@ Maintenant que tout est prêt, nous allons mettre en place les deux « tâches �
 .. image:: https://raw.githubusercontent.com/c4software/dotfiles/master/gitea/images/creation.png
 .. image:: https://raw.githubusercontent.com/c4software/dotfiles/master/gitea/images/creation2.png
 .. image:: https://raw.githubusercontent.com/c4software/dotfiles/master/gitea/images/creation3.png
+
