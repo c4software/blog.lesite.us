@@ -5,6 +5,7 @@ Installer Gitea (ou Gogs) sur un NAS Synology
 :category: Bidouille
 :date: 2018-02-03 20:00:00
 :blog:
+:status: draft
 :template: article.html
 
 On est tous d’accord le versionning c’est hyper important (oui même pour un projet perso). On peu utiliser GitHub ou GitLab (ou autre d’ailleur) mais si on à la chance d’avoir un « serveur » à la maison on peu faire mieux, héberger les sources à domiciles.
