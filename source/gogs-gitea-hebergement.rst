@@ -66,3 +66,16 @@ Maintenant que tout est prêt, nous allons mettre en place les deux « tâches �
 .. image:: https://raw.githubusercontent.com/c4software/dotfiles/master/gitea/images/creation2.png
 .. image:: https://raw.githubusercontent.com/c4software/dotfiles/master/gitea/images/creation3.png
 
+4. Démarrer manuellement le service
+-----------------------------------
+
+Maintenant que tout est prêt nous pouvons lancer le service, une fois lancer vous allez pouvoir configurer votre instance Gitea en allant sur :
+
+http://ip.de.votre.nas:3000
+
+À partir de maintenant vous êtes dans Gitea, personnellement je l’ai configuré en mode SQLite pour tester le services c’est bien. 
+
+5. Conclusion et fin
+--------------------
+
+Voilà votre service Git est fonctionnel. Cependant de base vous n’allez pouvoir cloner en SSH facilement. Dans un prochain article je vais détailler l’activation du serveur SSH intégré.
