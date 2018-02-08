@@ -15,6 +15,7 @@ Dans cet article, je vais détailler l'activation du serveur SSH intégré à Gi
 L'ensemble de la configuration est dans le fichier « custom/conf/app.ini » qui est dans le même dossier que le binaire. De base il contient quelques éléments de la configuration, mais pas l'ensemble (c'est d'ailleurs bien dommage…). Il suffit d'ajouter dans la section [server] la configuration suivante :
 
 .. code-block:: ini 
+
     [server]
     [...]
     START_SSH_SERVER = true
