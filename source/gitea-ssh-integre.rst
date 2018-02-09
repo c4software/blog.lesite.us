@@ -3,7 +3,7 @@ Activer le serveur SSH intégré à Gitea
 
 :tags: unix, git, gitea, bidouille, ssh
 :category: Bidouille
-:date: 2018-02-03 20:00:00
+:date: 2018-02-08 20:00:00
 :blog:
 :status: draft
 :template: article.html
