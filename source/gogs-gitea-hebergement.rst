@@ -5,7 +5,6 @@ Installer Gitea (ou Gogs) sur un NAS Synology
 :category: Bidouille
 :date: 2018-02-03 20:00:00
 :blog:
-:status: draft
 :template: article.html
 
 On est tous d'accord le versioning c'est hyper important (oui même pour un projet perso). Le plus simple c’est d’utiliser les services dans le cloud type GitHub ou GitLab (ou autre d'ailleurs) mais si on a la chance d'avoir un « serveur » à la maison on peut faire mieux « héberger les sources à domiciles ».
@@ -81,7 +80,8 @@ http://ip.de.votre.nas:3000
 
 Voilà votre service Git est fonctionnel. Cependant, de base vous n’allez pas pouvoir cloner en SSH facilement. Dans un prochain article je vais détailler l’activation du serveur SSH intégré.
 
-Cette article fait parti d’une série de trois articles :
+Cet article fait parti d’une série de trois articles :
 
-- `Activer le serveur SSH Intégré <#>`_
-- `Retrouver la mise en veille des disques avec Gitea en service <#>`_
+- `Héberger Gitea sur un Nas Synology <installer-gitea-ou-gogs-sur-un-nas-synology.html>`_
+- `Activer le serveur SSH Intégré <activer-le-serveur-ssh-integre-a-gitea.html>`_
+- `Retrouver la mise en veille des disques avec Gitea en service <synology-veilles-de-disques-et-gitea.html>`_
