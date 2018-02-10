@@ -10,7 +10,7 @@ J'ai récemment fait l'acquisition d'une (un ?) trackball Logitech Trackman Marb
 modèle au vu de la fiche Wikipedia il date de 1996, mais pour 2€ c'est vraiment une bonne affaire...  Enfin l'inconvénient d'avoir une souris aussi âgée c'est qu'elle ne possède pas de roulette, mais trois boutons
 comme sur cette image :
 
-.. image:: https://dl.dropboxusercontent.com/u/309501/Blog/Trackman/souris.jpg
+.. image:: https://i.ebayimg.com/images/g/6YwAAOSwFyhZ~Kfc/s-l1600.jpg
 
 Mais le gros avantage de Linux c'est que tout est configurable, donc aucun problème un petit fichier de configuration et ça roule.
 
