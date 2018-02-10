@@ -17,11 +17,11 @@
 
 	<p class="paginator">
 		{% if  paginator.has_previous %}
-        <a href="/{{ paginator.previous_page }}.html">&laquo;</a>
+        <a href="/{{ paginator.previous_page }}.html">&laquo; Page pr&eacute;c&eacute;dente</a>
         {% endif %}
-	    Page {{ current_page }} / {{ nb_page }}
+
 		{% if  paginator.has_next %}
-	    <a href="/{{ paginator.next_page }}.html">&raquo;</a>
+	    <a href="/{{ paginator.next_page }}.html">Page suivante &raquo;</a>
 	    {% endif %}
 	</p>
 {% endblock %}
