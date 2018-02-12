@@ -60,7 +60,7 @@ Pas grand-chose à faire, il suffit juste de taper la bonne commande :
 
 .. code-block:: shell
 
-    $ acme.sh --issue -d gitlab.votre_domaine.fr -d mattermost.votre_domaine.fr -w /var/www/letsencrypt --keypath /etc/gitlab/ssl/cert.key --certpath /etc/gitlab/ssl/cert.crt
+    $ acme.sh --issue -d gitlab.votre_domaine.fr -d mattermost.votre_domaine.fr -w /var/www/letsencrypt --keypath /etc/gitlab/ssl/cert.key --certpath /etc/gitlab/ssl/cert.crt --fullchain-file /etc/gitlab/ssl/fullchain.crt
 
 
 Et voilà, normalement les fichiers sont disponibles dans le dossier /etc/gitlab/ssl/
@@ -73,9 +73,9 @@ Maintenant que le certificat a été généré il faut activer réellement le SS
 .. code-block:: ruby
 
     # Permet d’indiquer l’emplacement des certificats SSL
-    mattermost_nginx['ssl_certificate'] = "/etc/gitlab/ssl/cert.crt"
+    mattermost_nginx['ssl_certificate'] = "/etc/gitlab/ssl/fullchain.crt"
     mattermost_nginx['ssl_certificate_key'] = "/etc/gitlab/ssl/cert.key"
-    nginx['ssl_certificate'] = "/etc/gitlab/ssl/cert.crt"
+    nginx['ssl_certificate'] = "/etc/gitlab/ssl/fullchain.crt"
     nginx['ssl_certificate_key'] = "/etc/gitlab/ssl/cert.key"
 
     # Permet la redirection du HTTP vers le HTTPS
