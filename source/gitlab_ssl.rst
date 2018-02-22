@@ -6,6 +6,8 @@ SSL : Gitlab + LetsEncrypt (acme.sh) = <3
 :blog:
 :template: article.html
 
+[Edit] Le support de LetsEncrypt est maintenant natif. `Consulter l’article <https://about.gitlab.com/2018/02/22/gitlab-10-5-released/#instant-ssl-with-lets-encrypt-for-gitlab>`_
+
 GitLab c'est bien, mais Gitlab en SSL c'est mieux ! Un petit article rapide pour vous montrer la simplicité de mise en place des certificats SSL gratuit fourni par LetsEncrypt.
 
 La première étape acme.sh
