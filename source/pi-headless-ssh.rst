@@ -28,6 +28,9 @@ Activation de Wifi :
 Toujours dans la partition « boot» il faut créer le fichier « wpa_supplicant.conf » avec le contenu suivant :
 
 .. code::
+  country=fr
+  update_config=1
+  ctrl_interface=/var/run/wpa_supplicant
 
   network={
     ssid="YOUR_SSID"
