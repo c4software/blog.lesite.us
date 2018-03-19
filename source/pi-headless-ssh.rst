@@ -6,6 +6,8 @@ Raspberry PI Zero W: SSH et Wifi headless.
 :blog:
 :template: article.html
 
+[Edit] Ajout du country dans le « wpa_supplicant.conf »
+
 J'ai acquis depuis quelques semaines un Raspberry Pi Zero W (la toute toute petite carte équipée du Wifi de la fondation Rasberry), la petite particularité de celle-ci c'est qu'elle n'est pas équipée d'un port HDMI habituel mais d'un mini HDMI dans mon cas ce n'est pas vraiment un soucis, car le Pi Zero va me servir comme « Mini serveur de relevés de températures ». Par contre le soucis c'est qu'il faut pouvoir activer l'accès SSH et le Wifi dès le premier boot et sans écran ni port ethernet.
 
 Heureusement tout est déjà prévu (mais pas forcément bien documenté à mon goût). Donc comme d’habitude :
