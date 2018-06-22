@@ -1,12 +1,10 @@
-Tester simple MacOS Mojave grace à APFS
-########################################
+Tester simplement MacOS Mojave grace à APFS
+###########################################
 
 :tags: Osx, Apfs, Mojave, beta
 :date: 2018-06-22 22:02:00
 :blog:
 :template: article.html
-
-Tapez ou collez votre texte en français ici et cliquez le bouton "Vérifier le texte".
 
 Comme beaucoup vous voulez tester la nouvelle version de MacOs... Mojave (ne me demandez pas comment on le prononce en bon Français je ne sais pas...) ! Précédemment je vous aurai dit de passer votre chemin ! Les bêtas de MacOs sont souvent très instables (les OS finaux parfois également... Mais ça c'est une autre histoire !).
 
