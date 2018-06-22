@@ -6,20 +6,23 @@ Tester simple MacOS Mojave grace à APFS
 :blog:
 :template: article.html
 
-Comme beaucoup vous voulez tester la nouvelle version de MacOS… Mojave (ne me demandez pas comment on le pronnonce en bon Français je ne sais pas…) ! Précédement je vous aurai dit passer votre chemin ! Les beta de MacOS sont toujours très instable (les OS finaux parfois également… Mais ça c'est une autre histoire !).
+Tapez ou collez votre texte en français ici et cliquez le bouton "Vérifier le texte".
 
-Bref, précédement installer une version beta de MacOS nécéssitait soit :
+Comme beaucoup vous voulez tester la nouvelle version de MacOs... Mojave (ne me demandez pas comment on le prononce en bon Français je ne sais pas...) ! Précédemment je vous aurai dit de passer votre chemin ! Les bêtas de MacOs sont souvent très instables (les OS finaux parfois également... Mais ça c'est une autre histoire !).
 
-- D'updater votre système actuelle.
+Bref, précédemment installer une version bêta de MacOs nécessitait soit :
+
+- D'updater votre système actuel.
 - Installer l'OS sur une seconde partition.
 
-Mais, maintenant un troisième choix est possible « un volume APFS ». Un volume APFS c'est comme une partition mais sans avoir à réserver de l'espace ou partitionner votre disque.
-En terme d'utilisation c'est plutôt simple :
+Mais, maintenant un troisième choix est possible « un volume APFS ». Un volume APFS c'est comme une partition, mais sans avoir à réserver de l'espace ou partitionner votre disque.
+
+En termes d'utilisation c'est plutôt simple :
 
 - Ouvrez « Utilitaire de Disque » dans Utilitaires.
-- Selectionnez "Ajouter un volume APFS" depuis le menu Édition.
+- Sélectionnez "Ajouter un volume APFS" depuis le menu Édition.
 - Nommez le (par exemple Mojave).
 
-Et maintenant à l'installation de Mojave vous pouvez séléctionner votre volume « Mojave » précédement créé.
+Et maintenant à l'installation de Mojave vous pouvez sélectionner votre volume « Mojave » précédemment créé.
 
-Bon test!
+Bon test !
