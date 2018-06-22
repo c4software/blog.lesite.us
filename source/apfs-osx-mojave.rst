@@ -13,7 +13,7 @@ Bref, précédemment installer une version bêta de MacOs nécessitait soit :
 - D'updater votre système actuel.
 - Installer l'OS sur une seconde partition.
 
-Mais, maintenant un troisième choix est possible « un volume APFS ». Un volume APFS c'est comme une partition, mais sans avoir à réserver de l'espace ou partitionner votre disque.
+Maintenant un troisième choix est possible « un volume APFS ». Un volume APFS c'est comme une partition, mais sans avoir à réserver de l'espace ou partitionner votre disque.
 
 En termes d'utilisation c'est plutôt simple :
 
