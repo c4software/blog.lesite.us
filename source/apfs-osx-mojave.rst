@@ -19,8 +19,8 @@ En termes d'utilisation c'est plutôt simple :
 
 - Ouvrez « Utilitaire de Disque » dans Utilitaires.
 - Sélectionnez "Ajouter un volume APFS" depuis le menu Édition.
-- Nommez le (par exemple Mojave).
+- Nommez-le (par exemple Mojave).
 
-Et maintenant à l'installation de Mojave vous pouvez sélectionner votre volume « Mojave » précédemment créé.
+Et maintenant pour l'installation de Mojave vous pouvez sélectionner votre volume « Mojave » précédemment créé.
 
 Bon test !
