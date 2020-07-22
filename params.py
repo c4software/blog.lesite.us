@@ -22,7 +22,6 @@ settings = {"site_title":"Un peu de tout, un peu de rien...",
 					    ('Archives', '/archives.html'),
 					    ('Moi', 'http://valentinbrosseau.lesite.us/'),
 					    ('Twitter', 'http://twitter.com/c4software'),
-					    ('Google+', 'https://plus.google.com/104883394321573041618/about'),
 					    ('Flux RSS', 'feeds/all.atom.xml')
 			        )
 			}
