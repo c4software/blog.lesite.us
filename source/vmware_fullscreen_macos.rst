@@ -14,7 +14,7 @@ Par contre, j'ai un souci le Dock ! En fullscreen celui-ci est « toujours affic
 Je viens de découvrir que ça se change facilement via la commande suivante :
 
 .. code:: bash
-    sudo lsappinfo setinfo -app com.vmware.fusion UIPresentationMode=kLSUIPresentationModeContentHiddenValue
 
+    $ sudo lsappinfo setinfo -app com.vmware.fusion UIPresentationMode=kLSUIPresentationModeContentHiddenValue
 
-Attention par contre, c'est temporaire le comportement revient « par defaut » quand vous quittez le mode plein écran… C'est toujours ça de pris !
+Attention par contre, c'est temporaire le comportement revient « par defaut » quand vous quittez le mode plein écran…
