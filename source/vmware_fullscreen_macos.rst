@@ -1,4 +1,4 @@
-VMWare fusion et la gestion du plein-écran / fullscreen
+VMWare fusion et la gestion du plein écran / fullscreen
 #######################################################
 
 :tags: vm, MacOS, fullscreen, dock
