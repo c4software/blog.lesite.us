@@ -1,5 +1,5 @@
-Installer le VPN WireGuard sur la Freebox delta
-###############################################
+VMWare fusion et la gestion du plein-écran / fullscreen
+#######################################################
 
 :tags: vm, MacOS, fullscreen, dock
 :category: macos
