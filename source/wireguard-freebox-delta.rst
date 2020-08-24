@@ -5,6 +5,7 @@ Installer le VPN WireGuard sur la Freebox delta
 :category: freebox
 :date: 2019-01-05 15:00:00
 :blog:
+:status: draft
 :template: article.html
 
 Depuis maintenant quelques mois (`8 octobre 2019 <https://dev.freebox.fr/blog/?p=5450>`_) il est possible de créer des machines virtuelles sur la Freebox Delta. La puissance de la freebox est « limité » mais ça fonctionne très bien pour des service simple (Jeedom, PiHole, …) c'est sympa ça fonctionne très bien ! Mais il est possible de faire bien plus !
