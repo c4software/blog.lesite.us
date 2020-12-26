@@ -38,12 +38,11 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/theme/images/favicon/favicon-180.png">
         <link rel="alternate" type="application/rss+xml" title="{{ author }} Flux Rss" href="/feeds/all.atom.xml"/>
 
-        <!-- <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic,700italic%7CSource+Code+Pro:400,700" rel="stylesheet" type="text/css"> -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-
-        <link rel="author" href="https://plus.google.com/u/0/+ValentinBrosseau" />
-        <link rel="publisher" href="https://plus.google.com/u/0/+ValentinBrosseau">
+        <link rel="author" href="https://twitter.com/c4software" />
+        <link rel="publisher" href="https://twitter.com/c4software">
     {% endblock head %}
 </head>
 <body>
@@ -59,7 +58,7 @@
 
     <header id="banner">
         <section id="avatar" class="center">
-            <a href="/"><img class="rounded" src="/theme/images/avatar.jpg" /></a>
+            <a href="/"><img class="rounded" loading="lazy" src="/theme/images/avatar.jpg" /></a>
         </section>
 
         <section class="center">
@@ -82,7 +81,7 @@
     </section>
 
     <footer class="center" id="footer" itemscope itemtype="http://data-vocabulary.org/Person">
-        G&eacute;n&eacute;r&eacute; par <a href="https://github.com/c4software/YASB">Yasb</a> le {{lastbuild.strftime("%Y-%m-%d")}} | <a rel="author" href="https://plus.google.com/104883394321573041618/about" title="+{{ author }}" itemprop="name">{{ author }}</a>
+        G&eacute;n&eacute;r&eacute; par <a href="https://github.com/c4software/YASB">Yasb</a> le {{lastbuild.strftime("%Y-%m-%d")}} | <a rel="author" href="https://twitter.com/c4software" title="+{{ author }}" itemprop="name">{{ author }}</a>
     </footer>
 </body>
 </html>
